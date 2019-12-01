@@ -5,8 +5,7 @@
   "main": "index.js",
   "scripts": {
     "postinstall": "remote-env",
-    "start": "ts-node server/index.ts",
-    "start-buttons": "forever-tunnel-dl .tunnels.json && cd buttonboard && parcel index.html"
+    "start": "forever-tunnel-dl .tunnels.json && parcel index.html"
   },
   "browserslist": [
     "last 1 Chrome versions"
@@ -27,7 +26,9 @@
     "parcel": "^1.12.4",
     "serve": "^11.2.0",
     "ts-node": "^8.5.4",
-    "ts-node-dev": "^1.0.0-pre.44",
+    "ts-node-dev": "^1.0.0-pre.44"
+  },
+  "devDependencies": {
     "typescript": "^3.7.2"
   }
 }

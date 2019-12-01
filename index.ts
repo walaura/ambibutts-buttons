@@ -1,7 +1,7 @@
-import { SequenceName, Action } from "../shared/tv";
+import { Action } from "./ambibutts/types/tv";
 import { addButton } from "./js/helpers";
 
-const urls = require("../.tunnels.json");
+const urls = require("./.tunnels.json");
 
 const dispatch = (action: Action) => {
   return fetch(urls["ambibutts-server"] + "/action", {
